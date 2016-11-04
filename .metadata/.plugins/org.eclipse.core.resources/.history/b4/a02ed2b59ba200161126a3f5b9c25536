@@ -1,0 +1,97 @@
+package personenverwaltung.view;
+
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.JTextField;
+
+import global.TableLayoutDefinition;
+import layout.TableLayout;
+import layout.TableLayoutConstants;
+
+public class PersonenverwaltungDetailPanel extends JPanel implements TableLayoutDefinition {
+
+	private JLabel surnameLabel;
+	private JLabel prenameLabel;
+	private JLabel mobileLabel;
+	private JLabel phoneLabel;
+	private JLabel emailLabel;
+	private JLabel altEmailLabel;
+	private JLabel streetLabel;
+	private JLabel houseNrLabel;
+	private JLabel plzLabel;
+	private JLabel ortLabel;
+	private JTextField surnameField;
+	private JTextField prenameField;
+	private JTextField mobileField;
+	private JTextField phoneField;
+	private JTextField emailField;
+	private JTextField altEmailField;
+	private JTextField streetField;
+	private JTextField houseNrField;
+	private JTextField plzField;
+	private JTextField ortField;
+	
+	
+	public PersonenverwaltungDetailPanel() {
+		initPanel();
+	}
+	
+	public void initPanel() {
+		
+		double size[][] = {
+				{LEFT, COMPONENT_WIDTH, COMPONENT_SPACE_HORIZONTAL, COMPONENT_WIDTH, RIGHT},
+				{TOP, COMPONENT_HEIGHT, COMPONENT_SPACE_VERTICAL, 
+					COMPONENT_HEIGHT, COMPONENT_SPACE_VERTICAL, 
+					COMPONENT_HEIGHT, COMPONENT_SPACE_VERTICAL, 
+					COMPONENT_HEIGHT, COMPONENT_SPACE_VERTICAL, 
+					COMPONENT_HEIGHT, COMPONENT_SPACE_VERTICAL, 
+					COMPONENT_HEIGHT, COMPONENT_SPACE_VERTICAL, 
+					COMPONENT_HEIGHT, COMPONENT_SPACE_VERTICAL, BOTTOM}
+		};
+		surnameLabel = new JLabel("Nachname");
+		surnameField = new JTextField();
+		prenameLabel = new JLabel("Vorname");
+		prenameField = new JTextField();
+		mobileLabel = new JLabel("Mobile");
+		mobileField = new JTextField();
+		phoneLabel = new JLabel("Festnetz");
+		phoneField = new JTextField();
+		emailLabel = new JLabel("E-Mail");
+		emailField = new JTextField();
+		altEmailLabel = new JLabel("Alt. E-Mail");
+		altEmailField = new JTextField();
+		streetLabel = new JLabel("Strasse");
+		streetField = new JTextField();
+		houseNrLabel = new JLabel("Hausnr.");
+		houseNrField = new JTextField();
+		plzLabel = new JLabel("PLZ");
+		plzField = new JTextField();
+		ortLabel = new JLabel("Ort");
+		ortField = new JTextField();
+		
+		TableLayout tableLayout = new TableLayout(size);
+		
+		this.setLayout();
+		this.add(surnameLabel, "1,1");
+		this.add(surnameField, "1,3");
+		this.add(prenameLabel, "3,1");
+		this.add(prenameField, "3,3");
+		this.add(mobileLabel, "5,1");
+		this.add(mobileField, "5,3");
+		this.add(phoneLabel, "7,1");
+		this.add(phoneField, "7,3");
+		this.add(emailLabel, "8,1");
+		this.add(emailField, "8,3");
+		this.add(altEmailLabel, "10,1");
+		this.add(altEmailField, "10,3");
+		this.add(streetLabel, "12,1");
+		this.add(streetField, "12,3");
+		this.add(houseNrLabel, "14,1");
+		this.add(houseNrField, "14,3");
+		this.add(plzLabel, "16,1");
+		this.add(plzField, "16,3");
+		this.add(ortLabel, "18,1");
+		this.add(ortField, "18,3");
+	}
+
+}

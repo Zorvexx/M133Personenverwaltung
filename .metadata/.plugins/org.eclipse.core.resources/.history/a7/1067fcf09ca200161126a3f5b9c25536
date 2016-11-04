@@ -1,0 +1,13 @@
+package global;
+
+import javax.swing.JFrame;
+
+public class MainFrame extends JFrame {
+
+	public MainFrame() {
+		this.setVisible(true);
+		this.setDefaultCloseOperation(EXIT_ON_CLOSE);
+		this.setSize(500, 500);
+	}
+
+}

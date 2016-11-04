@@ -1,0 +1,17 @@
+package personenverwaltung.view;
+
+import javax.swing.JPanel;
+
+import global.TableLayoutDefinition;
+import layout.TableLayoutConstants;
+
+public class PersonenverwaltungDetailPanel extends JPanel implements TableLayoutDefinition {
+
+	private JLabel surnameLable;
+	private JLabel prenameLable;
+	
+	public PersonenverwaltungDetailPanel() {
+		
+	}
+
+}

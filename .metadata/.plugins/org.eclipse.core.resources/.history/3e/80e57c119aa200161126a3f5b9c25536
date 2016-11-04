@@ -1,0 +1,67 @@
+package personenverwaltung.view;
+
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.JTextField;
+
+import global.TableLayoutDefinition;
+import layout.TableLayoutConstants;
+
+public class PersonenverwaltungDetailPanel extends JPanel implements TableLayoutDefinition {
+
+	private JLabel surnameLabel;
+	private JLabel prenameLabel;
+	private JLabel mobileLabel;
+	private JLabel phoneLabel;
+	private JLabel emailLabel;
+	private JLabel altEmailLabel;
+	private JLabel streetLabel;
+	private JLabel houseNrLabel;
+	private JLabel plzLabel;
+	private JLabel ortLabel;
+	private JTextField surnameField;
+	private JTextField prenameField;
+	private JTextField mobileField;
+	private JTextField phoneField;
+	private JTextField emailField;
+	private JTextField altEmailfield;
+	private JTextField streetField;
+	private JTextField houseNrField;
+	private JTextField plzField;
+	private JTextField ortField;
+	
+	
+	public PersonenverwaltungDetailPanel() {
+		
+	}
+	
+	public void initPanel() {
+		
+		double size[][] = {
+				{LEFT, COMPONENT_WIDTH, COMPONENT_SPACE_HORIZONTAL,COMPONENT_WIDTH, RIGHT},
+				{}
+		};
+		surnameLabel = new JLabel("Nachname");
+		prenameLabel = new JLabel("Vorname");
+		mobileLabel = new JLabel("Mobile");
+		phoneLabel = new JLabel("Festnetz");
+		emailLabel = new JLabel("E-Mail");
+		altEmailLabel = new JLabel("Alt. E-Mail");
+		streetLabel = new JLabel("Strasse");
+		houseNrLabel = new JLabel("Hausnr.");
+		plzLabel = new JLabel("PLZ");
+		ortLabel = new JLabel("Ort");
+
+		surnameField = new JTextField();
+		prenameField = new JTextField();
+		mobileField = new JTextField();
+		phoneField = new JTextField();
+		emailField = new JTextField();
+		altEmailfield = new JTextField();
+		streetField = new JTextField();
+		houseNrField = new JTextField();
+		plzField = new JTextField();
+		ortField = new JTextField();
+	}
+
+}

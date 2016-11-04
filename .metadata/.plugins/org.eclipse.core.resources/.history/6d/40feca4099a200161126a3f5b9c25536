@@ -1,0 +1,39 @@
+package personenverwaltung.view;
+
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+
+import global.TableLayoutDefinition;
+import layout.TableLayoutConstants;
+
+public class PersonenverwaltungDetailPanel extends JPanel implements TableLayoutDefinition {
+
+	private JLabel surnameLabel;
+	private JLabel prenameLabel;
+	private JLabel mobileLabel;
+	private JLabel phoneLabel;
+	private JLabel emailLabel;
+	private JLabel altEmailLabel;
+	private JLabel streetLabel;
+	private JLabel houseNrLabel;
+	private JLabel plzLabel;
+	private JLabel ortLabel;
+	
+	public PersonenverwaltungDetailPanel() {
+		
+	}
+	
+	public initPanel() {
+		surnameLabel = new JLabel("Nachname");
+		prenameLabel = new JLabel("Vorname");
+		mobileLabel = new JLabel("Mobile");
+		phoneLabel = new JLabel("Festnetz");
+		emailLabel = new JLabel("E-Mail");
+		altEmailLabel = new JLabel("Alt. E-Mail");
+		streetLabel = new JLabel("Strasse");
+		houseNrLabel = new JLabel("Hausnr.");
+		plzLabel = new JLabel("PLZ");
+		ortLabel = new JLabel("Ort");
+	}
+
+}

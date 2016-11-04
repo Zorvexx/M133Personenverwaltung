@@ -1,0 +1,12 @@
+package personenverwaltung.view;
+
+import global.TableLayoutDefinition;
+import layout.TableLayoutConstants;
+
+public class PersonenverwaltungDetailPanel extends JPanel implements TableLayoutDefinition {
+
+	public PersonenverwaltungDetailPanel() {
+		// TODO Auto-generated constructor stub
+	}
+
+}
