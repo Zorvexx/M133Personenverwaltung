@@ -1,0 +1,9 @@
+package personenverwaltung.view;
+
+public class PersonenverwaltungMainFrame {
+
+	public PersonenverwaltungMainFrame() {
+		// TODO Auto-generated constructor stub
+	}
+
+}
